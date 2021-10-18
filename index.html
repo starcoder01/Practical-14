@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-14</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/assignment14.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <div class="container">
+      <span
+        ><i class="fa fa-minus-square-o" aria-hidden="true" onclick="sub()"></i
+      ></span>
+      <span id="none"><p id="count"></p></span>
+      <span
+        ><i class="fa fa-plus-square-o" aria-hidden="true" onclick="add()"></i
+      ></span>
+    </div>
+
+    <script>
+      var x = document.getElementById("count");
+      var count = 0;
+      x.innerText = count;
+      function add() {
+        count = count + 1;
+        if(count>=0){
+          document.getElementById("none").style.opacity = 1;
+        }
+        x.innerText = count;
+      }
+
+      function sub() {
+        count = count - 1;
+        if (count < 0) {
+          document.getElementById("none").style.opacity = 0;
+          count = -1;
+        }
+        x.innerText = count;
+      }
+    </script>
+  </body>
+</html>
