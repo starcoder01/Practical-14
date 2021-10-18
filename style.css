@@ -1,0 +1,26 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 219, 238);
+}
+body h1{
+    text-align: center;
+    color: blue;
+    margin-top: 1rem;
+}
+.container{
+    margin-top: 2rem;
+    /* padding-right: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+span{
+    padding-right: 20px;
+    /* background-color: bisque; */
+}
